@@ -1,14 +1,17 @@
 package com.example.demo.model;
 
 import lombok.Data;
-
 import javax.persistence.*;
-@Entity(name = "testtbl")
+
+@Entity(name = "User")
 @Data
 public class User {
     @Id
     Long id;
 
-    @Column(name = "name")
-    String name;
-};
+    @Column(name = "username")
+    String username;
+
+    @Column(name = "password")
+    String password;
+}
