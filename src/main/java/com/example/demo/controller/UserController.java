@@ -7,6 +7,7 @@ import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -25,10 +26,10 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public void createUser() {
-
+    public void createUser(@RequestBody User user) {
+        System.out.println(user.toString());
+        userService.addUser(user);
     }
-
 
     @GetMapping("/all-codes")
     public List<Code> getCodes() {

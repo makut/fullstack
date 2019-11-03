@@ -20,4 +20,8 @@ public class UserService {
         List<User> users = userRepository.findAll();
         return users;
     }
+
+    public void addUser(User user) {
+        userRepository.save(user);
+    }
 }
