@@ -1,0 +1,57 @@
+.Head {
+    position: sticky;
+    background-color: #00b3a1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.MainPageLink {
+    color: white;
+    text-decoration: none;
+}
+
+.LoginFormButton {
+    background-color: #b31704;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.MyPastesButton {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #b31704;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.MyPastesButton:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.LogoutButton {
+    background-color: rgba(0,0,0,0.57);
+    border: none;
+    color: white;
+    padding: 20px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+

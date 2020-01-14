@@ -1,0 +1,37 @@
+.Box {
+    white-space: nowrap;
+    min-height: 0;
+}
+
+.color_type1 {
+    color: #AA22FF;
+}
+
+.color_type2 {
+    color: #000;
+}
+
+.color_type3 {
+    color: #080;
+}
+
+.color_type4 {
+    color: #007979;
+}
+
+.color_type5 {
+    color: #BA2121;
+}
+
+.color_type6 {
+    color: #008000;
+    font-weight: bold;
+}
+
+.color_type7 {
+    color: #000;
+}
+
+.color_type8 {
+    color: #008000;
+}

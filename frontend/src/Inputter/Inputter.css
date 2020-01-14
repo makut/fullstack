@@ -1,0 +1,49 @@
+.PasteSign {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.CodeInput {
+    width: 80vw;
+    max-width: 45vw;
+    min-width: 45vw;
+    font-size: 1.5ex;
+    min-height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    tab-size: 4;
+}
+
+.CodeInput:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px;
+}
+
+.NameInput {
+    font-size: 1.5ex;
+    /*margin-left: 2.5vw;*/
+    width: 35vw;
+}
+
+.Buttons {
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Button {
+    background-color: #222222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

@@ -1,0 +1,102 @@
+.LoginForm {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.LoginFormInner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    margin: auto;
+    background: white;
+}
+
+.CloseButton {
+    border: none;
+    background-color: white;
+    outline: none;
+    text-align: center;
+    font-size: xxx-large;
+    position: absolute;
+    right: 0.3ch;
+}
+
+.CloseButton:hover {
+    text-shadow: 2px 1px 2px grey;
+}
+
+.InputField {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FieldName {
+    font-size: large;
+    margin-right: 15px;
+}
+
+.Input {
+    width: 35ch;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #d2d2d2;
+    transition: 0.2s;
+    outline: none;
+}
+
+.Input:focus {
+    border: 3px solid black;
+}
+
+.Button {
+    background-color: #222222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.SwitchButton {
+    background: #c3c3c3;
+    color: white;
+    height: 3em;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 5px 20px;
+    border: none;
+}
+
+.SwitchButton.Active.ua {
+    background: linear-gradient(blue, yellow)!important;
+
+}
+
+.SwitchButton.ru.Active {
+    background: linear-gradient(white, blue, red);
+}
+
+.Active {
+    ;
+}
+
+.UnableSign {
+    color: darkred;
+}

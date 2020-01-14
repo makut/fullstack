@@ -1,0 +1,10 @@
+.LineNum {
+    background-color: #c3c3c3;
+    width: 4ch;
+    display: inline-block;
+    text-align: right;
+}
+
+.MarkedLine {
+    background-color: #efd2f1;
+}
