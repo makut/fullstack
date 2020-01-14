@@ -85,12 +85,12 @@
 }
 
 .SwitchButton.Active.ua {
-    background: linear-gradient(blue, yellow)!important;
+    background: linear-gradient(black, grey)!important;
 
 }
 
 .SwitchButton.ru.Active {
-    background: linear-gradient(white, blue, red);
+    background: linear-gradient(black, grey);
 }
 
 .Active {

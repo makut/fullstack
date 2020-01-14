@@ -19,7 +19,6 @@ class CodeWriter extends Component {
     }
 
     render() {
-        console.log(this.state.text);
         let parsed = divideToComponents(this.state.text);
         let lines = [[]];
         parsed.forEach((element) => {

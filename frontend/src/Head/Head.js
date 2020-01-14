@@ -10,7 +10,6 @@ class LoginStateShower extends Component {
     };
 
     onSubmit = () => {
-        console.log("123");
         logout().then(r => {
             this.props.onLogout();
         });

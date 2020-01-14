@@ -104,12 +104,9 @@ class LoginForm extends Component {
     };
 
     registerSubmit = async (username, password) => {
-        console.log("r");
         try {
             await register(username, password);
-            console.log("2");
             await login(username, password);
-            console.log("3");
         } catch (e) {
             this.setState({fault_message: true});
             throw e;
@@ -126,7 +123,6 @@ class LoginForm extends Component {
             !this.props.is_visible ? null :
             <div className="LoginForm">
                 <div className="LoginFormInner">
-                    <audio autoPlay src="https://krolik.sunproxy.net/listen/bHdKTHNZWUZjejNjbkFaWEtjbmV0a0t6TlphalVKbXB5aWFYUUIrc09tcC8yUHhoUlREL3NHZDJDZE9WYmVzZk5uY3pScVJuQVMvTEFVMG1mUEI1UThObHFWTmxVUEI0dXcxQStmekNZOVU9/aleksandr-pistoletov-iz-rossii-v-ukrainu_(Krolik.biz).mp3">www</audio>
                     <button onClick={() => this.setState({curr_wind: 'login', fault_message: false})}
                             className={getClass("login") + " ru"}>
                     Login

@@ -14,11 +14,9 @@ class CurrentUserPastesPage extends Component {
     get_codes = async () => {
         try {
             let response = await Axios.get('http://localhost:8080/user-pastes', {withCredentials: true});
-            console.log(response.data);
             this.setState({isLoading: false, data: response.data});
         }
         catch (err) {
-            console.log('awdawda');
             if (err.response && err.response.status === 403) {
                 this.props.logout();
             }
@@ -35,8 +33,6 @@ class CurrentUserPastesPage extends Component {
     }
 
     render() {
-        console.log(this.props.auth);
-        console.log(this.state);
         if (!this.props.auth.logged_in) {
             return (
                 <Redirect to="/" />

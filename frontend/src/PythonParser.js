@@ -229,7 +229,6 @@ function divideToComponents(text) {
         let block = {"type": StyleTypesEnum.Space, "string": '\n'};
         result.push(block);
     }
-    console.log(result);
     return result;
 }
 
