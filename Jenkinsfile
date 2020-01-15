@@ -3,7 +3,16 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                dir("server") {
+                    sh 'mvn compile'
+                }
+            }
+        }
+        stage('test') {
+            steps {
+                dir("server") {
+                    sh 'mvn test'
+                }
             }
         }
     }
