@@ -16,14 +16,6 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
 
-@Data
-class CodeDTO {
-    Long id;
-    String name;
-    String code;
-    Timestamp added;
-}
-
 @RestController
 public class CodeController {
     @Autowired
